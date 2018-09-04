@@ -9,6 +9,11 @@
   grid-template-rows: auto auto;
   grid-gap: 1rem 3rem; }
 
+@media (max-width: 767px) {
+  .read-more {
+    grid-template-columns:  5% 1fr 5%;
+  } }
+
 .read-text {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
@@ -244,8 +249,17 @@ h4 {
   margin-bottom: 0;
 }
 
+.info-container h4 {
+  font-size: 17px;
+}
+
+
 .first {
   margin-top: 0;
+}
+
+.last {
+  margin-bottom: 30px;
 }
 
 .blue {
@@ -260,12 +274,7 @@ h4 {
 .info {
   font-size: 15px;
   line-height: 1.6;
-  /*background-color: grey;*/
 }
-
-/*#header .chart-title {*/
-  /*font-size: 15px;*/
-/*}*/
 
 .wrapper {
   background-color: rgba(120, 120, 120, 0.05);
