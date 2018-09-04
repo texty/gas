@@ -9,9 +9,11 @@
   grid-template-rows: auto auto;
   grid-gap: 1rem 3rem; }
 
+/*отут починається ніпанятка*/
 @media (max-width: 767px) {
   .read-more {
-    grid-template-columns:  5% 1fr 5%;
+    display: grid;
+    grid-template-columns: 1fr;
   } }
 
 .read-text {
@@ -24,17 +26,29 @@
 .read-more-first {
   grid-column: 2 / 3;
   grid-row: 2 / 3; }
+@media (max-width: 767px) {
+  .read-more-first {
+    grid-column: 2/3 ;
+  } }
 
 .read-more-second {
   grid-column: 3 / 4;
   grid-row: 2 / 3; }
+@media (max-width: 767px) {
+  .read-more-second {
+    grid-column: 2/3 ;
+  } }
 
 .read-more-third {
   grid-column: 4 / 5;
   grid-row: 2 / 3; }
+@media (max-width: 767px) {
+  .read-more-third {
+    grid-column: 2/3 ;
+  } }
 
 .footer {
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   grid-column: 1 / -1;
   grid-row: 5 / 6;
   text-align: center;
@@ -284,7 +298,3 @@ h4 {
 .wrapper {
   grid-column: 2/3;
 }
-
-
-
-
