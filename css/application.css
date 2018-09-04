@@ -1,3 +1,5 @@
+/*колір фону титула: #b4b4b3 */
+
 
 .read-more {
   grid-column: 1 / -1;
@@ -5,7 +7,7 @@
   display: grid;
   grid-template-columns: auto 1fr 1fr 1fr auto;
   grid-template-rows: auto auto;
-  grid-gap: 1rem; }
+  grid-gap: 1rem 3rem; }
 
 .read-text {
   grid-column: 3 / 4;
