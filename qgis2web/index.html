@@ -16,6 +16,7 @@
             margin: 0;
         }
         </style>
+    
         <title></title>
     </head>
     <body>
@@ -39,7 +40,7 @@
         <script src="data/LNG_6.js"></script>
         <script src="data/Export_7.js"></script>
         <script src="data/countries.geojson"></script>
-        <script>
+        <script>   
         var highlightLayer;
         function highlightFeature(e) {
             highlightLayer = e.target;
@@ -79,6 +80,18 @@
         function setBounds() {
             map.setMaxBounds(map.getBounds());
         }     
+            
+//       var LabelIcon = function(labelClass,labelText){
+//            return L.divIcon({ 
+//                className: labelClass,
+//                html: labelText                
+//        })
+//        }
+//
+//            
+//        L.marker(new L.LatLng(64.75, -40.85), {icon:LabelIcon("textLabelclass","Схема постачання природного газу в Європу")}).addTo(map)
+            
+            
         function pop_Pipeline_Projects_0(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1464,6 +1477,22 @@
         map.on("layerremove", function(){
             resetLabels([layer_Pipeline_Projects_0,layer_Production_3, layer_Export_7, layer_LNG_6]);
         });
+            
+            
         </script>
+        
+        <style>
+            div#maptitle {
+                z-index: 999;
+                top: 25px;
+                left: 75px;
+                position: absolute;
+                font-family: arial;
+                font-size: 18px;
+                background-color: rgba(255,255,255,0.5);
+                padding: 10px;
+        </style>
+        <div id=maptitle>Схема постачання природного газу в Європу</div>
+        
     </body>
 </html>
